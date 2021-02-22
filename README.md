@@ -1,4 +1,4 @@
-# poc-nuxt-transitions
+# nuxt-transistions-playground
 
 ## Build Setup
 
