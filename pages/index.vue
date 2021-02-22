@@ -10,8 +10,11 @@
         <NuxtLink to="/with-parent-route/step1" class="button--green">
           With parent route
         </NuxtLink>
+        <NuxtLink to="/with-single-page" class="button--green">
+          With container component (single page)
+        </NuxtLink>
         <NuxtLink to="/with-component/step1" class="button--grey">
-          With component
+          With container component
         </NuxtLink>
       </div>
     </div>
@@ -67,6 +70,7 @@ export default {
   color: #3b8070;
   text-decoration: none;
   padding: 10px 30px;
+  margin-bottom: 15px;
   margin-right: 15px;
 }
 
