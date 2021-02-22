@@ -13,7 +13,7 @@
         <NuxtLink to="/with-single-page" class="button--green">
           With container component (single page)
         </NuxtLink>
-        <NuxtLink to="/with-component/step1" class="button--grey">
+        <NuxtLink to="/with-component/step1" class="button--red">
           With container component
         </NuxtLink>
       </div>
@@ -79,17 +79,17 @@ export default {
   background-color: #3b8070;
 }
 
-.button--grey {
+.button--red {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid #bb1414;
+  color: #bb1414;
   text-decoration: none;
   padding: 10px 30px;
 }
 
-.button--grey:hover {
+.button--red:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #bb1414;
 }
 </style>
