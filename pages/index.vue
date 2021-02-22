@@ -1,36 +1,35 @@
 <template>
-  <div class="container">
+  <div class="page">
     <div>
       <Logo />
-      <h1 class="title">poc-nuxt-transitions</h1>
+      <h1 class="title">Page transitions</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+        <NuxtLink to="/with-layout/step1" class="button--green">
+          With layout
+        </NuxtLink>
+        <NuxtLink to="/with-parent-route/step1" class="button--green">
+          With parent route
+        </NuxtLink>
+        <NuxtLink to="/with-component/step1" class="button--grey">
+          With component
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Logo from '../components/Logo.vue'
+
+export default {
+  components: {
+    Logo,
+  },
+}
 </script>
 
-<style>
-.container {
+<style scoped>
+.page {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -59,5 +58,34 @@ export default {}
 
 .links {
   padding-top: 15px;
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-right: 15px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
 }
 </style>
