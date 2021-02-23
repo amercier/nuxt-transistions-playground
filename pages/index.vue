@@ -16,6 +16,9 @@
         <NuxtLink to="/with-component/step1" class="button--red">
           With container component
         </NuxtLink>
+        <NuxtLink to="/with-dynamic-route/step1" class="button--red">
+          With dynamic route
+        </NuxtLink>
       </div>
     </div>
   </div>
