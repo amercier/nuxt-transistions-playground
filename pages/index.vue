@@ -10,7 +10,7 @@
         <NuxtLink to="/with-parent-route/step1" class="button--green">
           With parent route
         </NuxtLink>
-        <NuxtLink to="/with-single-page" class="button--green">
+        <NuxtLink to="/with-single-page/step1" class="button--green">
           With container component (single page)
         </NuxtLink>
         <NuxtLink to="/with-component/step1" class="button--red">
