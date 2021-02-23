@@ -1,5 +1,5 @@
 <template>
-  <PageContainer :step="2" @submit="handleSubmit">
+  <div>
     <p>
       Nunc tristique libero eu sapien vestibulum, et pharetra eros commodo.
       Suspendisse sodales metus eu neque consectetur accumsan. Mauris pulvinar
@@ -17,22 +17,11 @@
     <div>
       <button @click="handleSubmit">Next</button>
     </div>
-  </PageContainer>
+  </div>
 </template>
 
 <script>
 export default {
-  layout: 'steps',
-
-  beforeMount() {
-    this.$root.$on('sideSubmit', this.handleSubmit)
-    this.$store.commit('setCurrentStep', 2)
-  },
-
-  beforeDestroy() {
-    this.$root.$off('sideSubmit', this.handleSubmit)
-  },
-
   methods: {
     handleSubmit() {
       // eslint-disable-next-line no-console

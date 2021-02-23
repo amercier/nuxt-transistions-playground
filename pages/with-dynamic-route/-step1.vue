@@ -1,5 +1,5 @@
 <template>
-  <PageContainer :step="1" @submit="handleSubmit">
+  <div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius
       aliquet semper. Proin vulputate nisi nec justo imperdiet, quis lacinia
@@ -19,17 +19,11 @@
     <div>
       <button @click="handleSubmit">Next</button>
     </div>
-  </PageContainer>
+  </div>
 </template>
 
 <script>
-import PageContainer from '../../components/PageContainer.vue'
-
 export default {
-  components: {
-    PageContainer,
-  },
-
   methods: {
     handleSubmit() {
       // eslint-disable-next-line no-console
