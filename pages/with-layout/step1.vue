@@ -40,7 +40,7 @@ export default {
       // eslint-disable-next-line no-console
       console.log('Step 1 submit')
 
-      this.$router.push('/with-layout/step2')
+      this.$router.push(`/${this.$route.fullPath.split('/')[1]}/step2`)
     },
   },
 }
